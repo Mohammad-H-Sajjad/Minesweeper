@@ -28,7 +28,7 @@ Cy = int(y_size / 2)
 if pCentBomb > 99:
   raise Exception("too high of a percentage")
 
-print(pCentBomb / 100)
+#print(pCentBomb / 100)
 
 
 def ConvertXYToList(x, y):
@@ -69,7 +69,7 @@ def SafeGet(index, list):  #safely get the specified index of a list, returning 
 
 
 def PlaceBombs():
-  print("here")
+  #print("here")
   BombAmt = int(x_size * y_size * pCentBomb / 100)
   BombsPlaced = 0
   index = 0
@@ -167,10 +167,10 @@ for i in range(len(BombGrid)):
   CountBombs(i)
   #PrintGrid(BombGrid,0,0)
   #print("")
-PrintGrid(BombGrid)
-print("")
-PrintGrid(VisualGrid)
-print("")
+#PrintGrid(BombGrid)
+#print("")
+#PrintGrid(VisualGrid)
+#print("")
 
 
 def GameLoop():
