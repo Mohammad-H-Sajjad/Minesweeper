@@ -131,7 +131,6 @@ def click(index, Flag=False):
             continue
 
           if VisualGrid[index + neighbor] == "●":
-            TilesFound += 1
             click(index + neighbor, False)
   else:
     if VisualGrid[index] == "⊛":
@@ -186,6 +185,6 @@ def GameLoop():
         click(ConvertXYToList(Cx, Cy), True)
       elif action in "WASD":
         MoveCursor(action)
-
+  print("You Win")
 
 GameLoop()
