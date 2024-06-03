@@ -115,8 +115,10 @@ def click(index, Flag=False):
       #stop program
       exit()
     else:
+      if VisualGrid[index] == "●":
+        TilesFound += 1
       VisualGrid[index] = convertSymbol[int(BombGrid[index])]
-      TilesFound += 1
+      
       if symbol == 0:
         #recursive 0 spreading
         for neighbor in neighborhoods:
